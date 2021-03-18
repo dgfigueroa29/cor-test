@@ -1,33 +1,40 @@
-# Adonis fullstack application
+# cor-test
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+This is the challenge test for COR. You can see the Spanish version of this file [here](LEER.md)
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+## System Requirements
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/get-npm)
+- [git](https://git-scm.com/)
+- [SQLite](https://www.sqlite.org/download.html)
+- [AdonisJs](https://adonisjs.com/docs/4.1/installation)
 
 ## Setup
 
-Use the adonis command to install the blueprint
+Clone this repo and then run:
 
 ```bash
-adonis new yardstick
+npm i
 ```
 
-or manually clone the repo and then run `npm install`.
+If you want you can also run these so that the configuration is optimal
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+```bash
+npm audit fix --force
+npm fund
 ```
-# cor-test
-# cor-test
+
+## To Serve
+
+Finally if you want to lift the service do the following
+
+```bash
+adonis serve --dev
+```
+
+If you need to run the tests do this
+
+```bash
+adonis test
+```
